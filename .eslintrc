@@ -3,5 +3,9 @@
   "extends": "dustinspecker/esnext",
   plugins: [
     "no-use-extend-native"
-  ]
+  ],
+  rules: {
+    "array-bracket-spacing": 0,
+    "object-curly-spacing": 0
+  }
 }
