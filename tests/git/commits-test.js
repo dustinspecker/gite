@@ -23,5 +23,5 @@ test('it return commit SHAs in current branch', t => {
     }
   )
 
-  t.same(commits(), ['hello', 'bye'])
+  t.same(commits.default(), ['hello', 'bye'])
 })

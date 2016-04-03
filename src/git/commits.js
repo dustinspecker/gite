@@ -1,6 +1,6 @@
 import {spawnSync} from 'child_process'
 
-module.exports = () =>
+export default () =>
   spawnSync('git', ['rev-list', 'head'])
     .stdout
     .toString()
