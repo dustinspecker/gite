@@ -21,7 +21,10 @@
   "files": [
     "lib"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "deku": "^2.0.0-rc16",
+    "dscript-deku": "^1.0.0"
+  },
   "devDependencies": {
     "austin": "^0.1.1",
     "ava": "^0.13.0",
@@ -35,6 +38,7 @@
     "eslint": "^2.4.0",
     "eslint-config-dustinspecker": "^0.4.1",
     "eslint-plugin-no-use-extend-native": "^0.3.1",
+    "json-loader": "^0.5.4",
     "nyc": "^6.1.1",
     "proxyquire": "^1.7.4",
     "webpack": "^1.12.14",
@@ -42,7 +46,7 @@
   },
   "ava": {
     "files": [
-      "tests/**/{test,*-test}.js"
+      "tests/**/*-test.js"
     ],
     "require": [
       "babel-register"

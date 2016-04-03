@@ -22,6 +22,11 @@ const config =
           [ 'babel'
           ]
         }
+      , { test: /\.json$/
+        , loaders:
+          [ 'json'
+          ]
+        }
       ]
     }
   , output:

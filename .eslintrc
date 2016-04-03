@@ -4,6 +4,9 @@
   plugins: [
     "no-use-extend-native"
   ],
+  env: {
+    browser: true
+  },
   rules: {
     "array-bracket-spacing": 0,
     "object-curly-spacing": 0
