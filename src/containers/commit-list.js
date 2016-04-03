@@ -19,4 +19,4 @@ const mapStateToProps = ({commits}) =>
 
 export default connect(
   mapStateToProps
-)(validate(commitList))
+)(validate(commitList, 2))
