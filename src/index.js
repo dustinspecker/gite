@@ -15,9 +15,9 @@ const reducers =
 const store =
   createStore(combineReducers(reducers))
 
-store.dispatch(setCommits(gitCommits()))
-
 const render =
   createApp(document.getElementById('app'))
 
-render(creator(commitList)(), store.getState())
+store.subscribe(() => render(creator(commitList)(), store.getState()))
+
+store.dispatch(setCommits(gitCommits()))
