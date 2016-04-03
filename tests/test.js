@@ -1,8 +1,18 @@
 'use strict'
+import austin from 'austin'
+import proxyquire from 'proxyquire'
 import test from 'ava'
 
-import gite from '../lib/'
+test('it logs commits', t => {
+  austin.spy(console, 'log')
 
-test('it should do something awesome', t => {
-  t.ok(!!gite())
+  const gc = austin.spy().returns('commits')
+
+  proxyquire('../src/',
+    { './git/commits': gc
+    }
+  )
+
+  t.is(gc.callCount(), 1)
+  t.true(console.log.calledWith('commits'))
 })

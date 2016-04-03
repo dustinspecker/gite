@@ -1,3 +1,3 @@
-console.log('hi')
+import commits from './git/commits'
 
-export default () => 3
+console.log(commits())
