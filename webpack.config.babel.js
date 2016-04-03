@@ -29,6 +29,7 @@ const config =
     , publicPath: '/'
     , filename: 'bundle.js'
     }
+  , target: 'electron'
   }
 
 export default config
