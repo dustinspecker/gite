@@ -24,9 +24,11 @@
   "dependencies": {
     "deku": "^2.0.0-rc16",
     "deku-prop-types": "^0.4.1",
+    "deku-prop-types-immutable": "^0.2.3",
     "deku-redux-connect": "^0.1.8",
     "dscript-deku": "^1.0.0",
-    "immutable": "^3.7.6"
+    "immutable": "^3.7.6",
+    "redux": "^3.3.1"
   },
   "devDependencies": {
     "austin": "^0.1.1",

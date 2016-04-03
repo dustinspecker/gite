@@ -1,4 +1,5 @@
 'use strict'
+import {fromJS} from 'immutable'
 import test from 'ava'
 
 import commitList from '../../src/containers/commit-list'
@@ -7,10 +8,12 @@ test('it displays list', t => {
   const model =
     { context:
       { commits:
-        [ 'commit1'
-        , 'commit2'
-        , 'commit3'
-        ]
+        fromJS(
+          [ 'commit1'
+          , 'commit2'
+          , 'commit3'
+          ]
+        )
       }
     }
 
