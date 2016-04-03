@@ -23,7 +23,7 @@
   ],
   "dependencies": {
     "deku": "^2.0.0-rc16",
-    "deku-prop-types": "^0.3.2",
+    "deku-prop-types": "^0.4.0",
     "deku-redux-connect": "^0.1.8",
     "dscript-deku": "^1.0.0"
   },
