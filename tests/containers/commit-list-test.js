@@ -9,9 +9,9 @@ test('it displays list', t => {
     { context:
       { commits:
         fromJS(
-          [ 'commit1'
-          , 'commit2'
-          , 'commit3'
+          [ '1commit'
+          , '2commit'
+          , '3commit'
           ]
         )
       }
@@ -25,9 +25,9 @@ test('it displays list', t => {
   const [child1, child2, child3] = component.children
 
   t.is(child1.type, 'li')
-  t.is(child1.children[0].nodeValue, 'commit1')
+  t.is(child1.children[0].nodeValue, '1commi')
   t.is(child2.type, 'li')
-  t.is(child2.children[0].nodeValue, 'commit2')
+  t.is(child2.children[0].nodeValue, '2commi')
   t.is(child3.type, 'li')
-  t.is(child3.children[0].nodeValue, 'commit3')
+  t.is(child3.children[0].nodeValue, '3commi')
 })

@@ -7,7 +7,7 @@ import {PropTypes, validate} from 'deku-prop-types'
 const commitList = ({props}) =>
   ul(
     props.commits.toJS().map(commit =>
-      li([commit])
+      li([commit.substr(0, 6)])
     )
   )
 
