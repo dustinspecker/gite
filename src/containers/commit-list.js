@@ -1,9 +1,16 @@
 'use strict'
+import connect from 'deku-redux-connect'
 import {li, ul} from 'dscript-deku'
 
-export default ({context}) =>
+const commitList = ({props}) =>
   ul(
-    context.commits.map(commit =>
+    props.commits.map(commit =>
       li([commit])
     )
   )
+
+const mapStateToProps = ({commits}) => ({commits})
+
+export default connect(
+  mapStateToProps
+)(commitList)
