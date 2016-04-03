@@ -14,7 +14,8 @@ commitList.propTypes =
   { commits: PropTypes.arrayOf(PropTypes.string)
   }
 
-const mapStateToProps = ({commits}) => ({commits})
+const mapStateToProps = ({commits}) =>
+  ({commits})
 
 export default connect(
   mapStateToProps
