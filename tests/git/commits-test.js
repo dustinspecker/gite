@@ -5,7 +5,7 @@ import test from 'ava'
 test('it return commit SHAs in current branch', t => {
   const spawnSync = (command, args) => {
     t.is(command, 'git')
-    t.same(args, ['rev-list', 'head'])
+    t.deepEqual(args, ['rev-list', 'head'])
 
     const output =
       { stdout: 'hello\nbye\n'
@@ -23,5 +23,5 @@ test('it return commit SHAs in current branch', t => {
     }
   )
 
-  t.same(commits.default(), ['hello', 'bye'])
+  t.deepEqual(commits.default(), ['hello', 'bye'])
 })

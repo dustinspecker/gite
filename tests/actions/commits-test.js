@@ -8,5 +8,5 @@ test('setCommits returns SET_COMMITS action', t => {
     actions.setCommits(['123', '456'])
 
   t.is(type, 'SET_COMMITS')
-  t.same(commits, ['123', '456'])
+  t.deepEqual(commits, ['123', '456'])
 })
