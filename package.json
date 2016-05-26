@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "austin": "^0.1.1",
-    "ava": "^0.14.0",
+    "ava": "^0.15.1",
     "babel-cli": "^6.4.0",
     "babel-eslint": "^6.0.0",
     "babel-loader": "^6.2.4",
