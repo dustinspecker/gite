@@ -42,7 +42,7 @@
     "electron-prebuilt": "^0.37.3",
     "eslint": "^2.4.0",
     "eslint-config-dustinspecker": "^1.1.0",
-    "eslint-plugin-no-use-extend-native": "^0.3.1",
+    "eslint-plugin-no-use-extend-native": "^0.3.12",
     "eslint-plugin-xo": "^0.4.0",
     "json-loader": "^0.5.4",
     "nyc": "^6.1.1",
