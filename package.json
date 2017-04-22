@@ -48,7 +48,7 @@
     "nyc": "^6.1.1",
     "proxyquire": "^1.7.4",
     "webpack": "^1.12.14",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": "^2.4.3"
   },
   "ava": {
     "files": [
