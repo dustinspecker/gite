@@ -46,7 +46,7 @@
     "eslint-plugin-xo": "^0.4.0",
     "json-loader": "^0.5.4",
     "nyc": "^6.1.1",
-    "proxyquire": "^1.7.4",
+    "proxyquire": "^1.8.0",
     "webpack": "^1.12.14",
     "webpack-dev-server": "^1.14.1"
   },
